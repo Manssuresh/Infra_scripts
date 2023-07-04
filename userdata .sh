@@ -3,11 +3,15 @@
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
+echo apache >> /etc/hostname
+hostnamectl set-hostname apache
 #Install nginx
 #!/bin/bash
 yum install nginx -y
 systemctl start nginx
 systemctl enable nginx
+echo nginx >> /etc/hostname
+hostnamectl set-hostname nginx
 cd /tmp
 wget https://www.free-css.com/assets/files/free-css-templates/download/page292/simply-amazed.zip
 unzip simply-amazed.zip
@@ -18,6 +22,8 @@ cd 2123_simply_amazed
 #INSTALL JAVA
 #!/bin/bash
 yum install java -y
+echo tomcat >> /etc/hostname
+hostnamectl set-hostname tomcat
 cd /opt
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76-windows-x64.zip
 unzip apache-tomcat-9.0.76-windows-x64.zip
