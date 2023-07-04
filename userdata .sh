@@ -19,7 +19,7 @@ cd 2123_simply_amazed
 #!/bin/bash
 yum install java -y
 cd /opt
-wget wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76-windows-x64.zip
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76-windows-x64.zip
 unzip apache-tomcat-9.0.76-windows-x64.zip
 rm -rf apache-tomcat-9.0.76-windows-x64.zip
 mv apache-tomcat-9.0.76 tomcat9
