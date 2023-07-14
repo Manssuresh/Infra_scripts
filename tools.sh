@@ -11,3 +11,8 @@ sudo yum install -y https://s3.region.amazonaws.com/amazon-ssm-region/latest/lin
 #Install telnet and nc tools
 sudo yum -y install telnet
 sudo yum install -y nc
+
+#Install mysql cli
+wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+dnf install mysql80-community-release-el9-1.noarch.rpm
+dnf install mysql-community-server
