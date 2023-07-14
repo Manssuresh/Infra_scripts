@@ -18,7 +18,7 @@ unzip simply-amazed.zip
 rm -rf simply-amazed.zip 
 cd 2123_simply_amazed
 #backslash before cp tp avoid prompt for overwrite
-\cp -rf * /usr/share//nginx/html/
+\cp -rf * /usr/share//nginx/html/nginx
 #INSTALL JAVA
 #!/bin/bash
 yum install java -y
